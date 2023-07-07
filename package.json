@@ -9,5 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@threadsjs/threads.js": "^1.0"
   }
 }
