@@ -2,11 +2,14 @@ var http = require('http');
 import { getToken, getPost } from '@threadjs/threads.js';
 
 let user;
-await getToken('kuramanimecom', 'wedontknow123!').then(async token => {
-    await getUser('25025320', token).then(user => {
-        user = user;
-    })
-})
+async function setUser() {
+    await getToken('kuramanimecom', 'wedontknow123!').then(async token => {
+        await getUser('25025320', token).then(user => {
+            user = user;
+        });
+    });
+}
+setUser();
 
 http.createServer(function (req, res) {
     // console.log(`Just got a request at ${req.url}!`)
