@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@threadsjs/threads.js": "^1.0"
+    "@threadsjs/threads.js": "^1.1.1",
   },
   "type": "module"
 }
